@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Big Data in Real-Time with Storm</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="css/flowtime.css">
+  <link rel="stylesheet" href="css/themes/zedge.css">
+  <link rel="stylesheet" href="assets/css/prism.css">
+</head>
+<body>
+  
+  <div class="flowtime">
+    <div class="ft-section" data-id="section-1">
+      <div id="/section-2/page-1" class="ft-page cover" data-id="Cover">
+        <img src="img/glue.jpg" />
+      </div>
+      <div id="/section-2/page-2" class="ft-page cover" data-id="page-1">
+        <img src="img/Cat_harness_and_leash.jpg" />
+      </div>
+    </div>
+
+    <div class="ft-section" data-id="section-2">
+      <div id="/section-2/page-1" class="ft-page" data-id="page-1">
+        <img src="img/Measuring_Tape_Inch+CM.jpg" />
+      </div>
+      <div id="/section-2/page-2" class="ft-page" data-id="page-2">
+        <h2>Activity</h2>
+          <h1>Total Traffic</h1>
+          <hr />
+          <h1>Active Users</h1>
+      </div>
+        <div id="/section-2/page-3" class="ft-page" data-id="page-3">
+            <h2>Retention</h2>
+            <h1>DAU</h1>
+            <hr />
+            <h1>MAU</h1>
+        </div>
+    </div>
+
+    <div class="ft-section" data-id="section-3">
+      <div id="/section-3/page-1" class="ft-page" data-id="page-1" data-title="Good">
+          <h2>The good</h2>
+          <h1>Simple</h1>
+          <h1>Understandable</h1>
+          <h1>Easy calculation</h1>
+      </div>
+      <div id="/section-3/page-2" class="ft-page" data-id="page-2" data-title="Bad">
+        <h2>The bad</h2>
+        <h1>Just a definition</h1>
+        <h1>Not scale invariant</h1>
+      </div>
+        <div id="/section-3/page-3" class="ft-page" data-id="page-3" data-title="Ugly">
+            <h2>The ugly</h2>
+            <h1>DAU&nbsp;/&nbsp;MAU &#x2260; HAU&nbsp;/&nbsp;DAU</h1>
+            <h1>DT&nbsp;/&nbsp;DAU &#x2260; HT&nbsp;/&nbsp;HAU</h1>
+            <h1>Seasonal</h1>
+            <h1>Delayed effect</h1>
+        </div>
+    </div>
+
+    <div class="ft-section" data-id="section-4">
+      <div id="/section-4/page-1" class="ft-page" data-id="page-1">
+        <h1>Solution?</h1>
+      </div>
+        <div id="/section-4/page-2" class="ft-page" data-id="page-2">
+            <img src="img/nima.jpg">
+        </div>
+    </div>
+  </div>
+
+  <div class="loglog"></div>
+
+  <script src="js/brav1toolbox.js"></script>
+  <script src="js/flowtime.js"></script>
+  <script src="assets/js/prism.js"></script>
+
+  <script type="text/javascript">
+    var cacheTitle = document.title.replace("Big Data in Real-Time with Storm", "");
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1228618-10']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    
+    // Configuration API test
+    Flowtime.showProgress(true);
+    //
+    // event management
+    Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+    function onNavigation(e)
+    {
+      _gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+      // console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+      cacheTitle = document.title.replace("Big Data in Real-Time with Storm | ", "");
+    }
+    // starts the application with configuration options
+    Flowtime.start();
+  </script>
+  <script type="text/javascript" src="http://slidemote.jit.su/slidemote.js#flowtime"></script>
+</body>
+</html>
